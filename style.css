@@ -554,3 +554,237 @@ background-color: white;
  
      }
    }
+
+
+/* Efeitos de hover e transições suaves */
+.menu img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.login button:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease;
+}
+
+/* Banner - transição suave entre imagens */
+.slideshow-container .slide {
+    animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Efeito de hover nos itens de produtos */
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ajuste de responsividade para telas pequenas */
+@media only screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    
+    .pesquisa input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .contenedor-items {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .slideshow-container img {
+        height: 300px; /* Reduzindo altura para telas menores */
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .menu {
+        padding: 10px;
+        height: auto;
+    }
+
+    .pesquisa input {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .login button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .contenedor-items {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+
+    .slideshow-container img {
+        height: 200px; /* Ajuste para telas menores */
+    }
+
+    .carrito {
+        width: 100%;
+    }
+}
+
+
+
+/* Definindo cores futuristas e neon */
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif; /* Uma fonte futurista */
+}
+
+.menu {
+    background-color: #000000;
+    border-bottom: 2px solid #00ffcc; /* Neon border */
+}
+
+.menu img {
+    filter: drop-shadow(0 0 10px #00ffcc); /* Neon glow */
+}
+
+.login button {
+    background-color: #0f0f0f;
+    color: #00ffcc;
+    border: 2px solid #00ffcc;
+    transition: all 0.3s ease-in-out;
+}
+
+.login button:hover {
+    background-color: #00ffcc;
+    color: #000000;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+/* Botões de navegação futuristas */
+.prev, .next {
+    background-color: #0d0d0d;
+    color: #00ffcc;
+    border: 2px solid #00ffcc;
+    transition: 0.5s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: #00ffcc;
+    color: #0d0d0d;
+}
+
+/* Efeitos neon nos pontos indicadores */
+.dot {
+    background-color: #00ffcc;
+}
+
+.active {
+    background-color: #ff00ff; /* Neon color for active state */
+}
+
+/* Itens com efeito neon e futurista */
+.item {
+    background-color: #0f0f0f;
+    border: 1px solid #00ffcc;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+/* Fontes e cores neon nas descrições de produtos */
+.titulo-item {
+    color: #00ffcc;
+}
+
+.precio-item {
+    color: #ff00ff;
+}
+
+/* Botão futurista nos produtos */
+.boton-item {
+    background-color: #0f0f0f;
+    border: 2px solid #00ffcc;
+    color: #00ffcc;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton-item:hover {
+    background-color: #00ffcc;
+    color: #000000;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+/* Efeito neon no carrinho */
+.carrito {
+    background-color: #1a1a1a;
+    border: 2px solid #00ffcc;
+}
+
+.header-carrito {
+    background-color: #000000;
+    border-bottom: 2px solid #00ffcc;
+}
+
+/* Botão de pagamento futurista */
+.btn-pagar {
+    background-color: #00ffcc;
+    color: #000000;
+    border: none;
+}
+
+.btn-pagar:hover {
+    background-color: #ff00ff;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Ajustes de responsividade para o design futurista */
+@media only screen and (max-width: 768px) {
+    .contenedor-items {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .slideshow-container img {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .menu {
+        padding: 10px;
+        height: auto;
+    }
+
+    .login button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .contenedor-items {
+        grid-template-columns: 1fr;
+    }
+
+    .slideshow-container img {
+        height: 180px;
+    }
+
+    .carrito {
+        width: 100%;
+    }
+}
+
+/* Animação de entrada suave */
+@keyframes fade {
+    from {opacity: 0.6}
+    to {opacity: 1}
+}
