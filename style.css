@@ -232,7 +232,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 
 #estacoes-do-ano div a img {
-    height: 19vh;
+    height: 13vh;
     width: 100%;
     border-radius: 10%;
     
@@ -241,10 +241,10 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 #estacoes-do-ano div a p {     
     text-align: center;
-    font-size: 1.0em;
-    font-weight: 200;
-    color: #000000;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight:100;
+    color: #ffffff;
+   font-family: ' Arial';
 }
 
 
