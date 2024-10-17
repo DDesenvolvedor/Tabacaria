@@ -279,6 +279,13 @@ list-style:none ;
 
 
 }
+.item-selecionado {
+    border: 2px solid #ff0000; /* Borda vermelha para destacar o item */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Sombra vermelha */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 
 #menu-produtos ul li a {

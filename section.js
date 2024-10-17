@@ -60,6 +60,16 @@ function pagarClicked(){
 function agregarAlCarritoClicked(event){
     var button = event.target;
     var item = button.parentElement;
+
+    // Remover a classe de todos os itens antes de adicionar ao clicado
+    var allItems = document.getElementsByClassName('item');
+    for (var i = 0; i < allItems.length; i++) {
+        allItems[i].classList.remove('item-selecionado');
+    }
+
+    // Adicionar a classe de seleção ao item clicado
+    item.classList.add('item-selecionado');
+
     var titulo = item.getElementsByClassName('titulo-item')[0].innerText;
     var precio = item.getElementsByClassName('precio-item')[0].innerText;
     var imagenSrc = item.getElementsByClassName('img-item')[0].src;
